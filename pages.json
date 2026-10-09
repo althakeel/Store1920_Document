@@ -1,0 +1,905 @@
+{
+  "title": "Store1920 Seller Dashboard Guide",
+  "subtitle": "Settings and tools in the seller dashboard",
+  "intro": "This guide documents the seller dashboard at /store. The dashboard is English and left-to-right only. Shoppers use the public storefront; this area is for the store team.",
+  "sections": [
+    {
+      "id": "account",
+      "name": "Account settings",
+      "kicker": "Gear menu",
+      "color": "#4338ca",
+      "summary": "Open Settings at the bottom of the sidebar. These screens control the account, the store record, email delivery, checkout payment methods, the New badge, staff access, and the activity log.",
+      "pages": [
+        {
+          "id": "settings-profile",
+          "title": "Profile",
+          "path": "/store/settings",
+          "clickTab": "Profile",
+          "summary": "The signed-in person's name, email, and photo. This is the dashboard account, not the public store name.",
+          "controls": [
+            "Profile photo — PNG, JPG, or WEBP up to 5 MB. The photo uploads when you choose a file, or when you click Save changes.",
+            "Full name — shown on the dashboard account.",
+            "Email address — the login email for this user.",
+            "Save changes — writes the profile. Unsaved edits stay on this screen until you save."
+          ]
+        },
+        {
+          "id": "settings-store",
+          "title": "Store",
+          "path": "/store/settings",
+          "clickTab": "Store",
+          "summary": "Business identity and address stored on the seller account.",
+          "controls": [
+            "Store name — the business name.",
+            "Business type — Retail, Wholesale, Service, Digital Products, or Other.",
+            "Phone number and website URL.",
+            "Description — a short note about the store.",
+            "Street address, city, state or emirate, and ZIP / postal code."
+          ]
+        },
+        {
+          "id": "settings-preferences",
+          "title": "Preferences",
+          "path": "/store/settings",
+          "clickTab": "Preferences",
+          "summary": "Currency, account alerts, two-factor authentication, and the two SMTP mailboxes used to send store email.",
+          "controls": [
+            "Email notifications — receive updates about orders and promotions.",
+            "Two-factor authentication — extra security on the account.",
+            "Currency preference — AED, USD, EUR, or GBP.",
+            "Transactional SMTP — host, port, username, password, from address, and TLS. Used for order confirmations, password resets, and no-reply messages.",
+            "Promotional SMTP — a separate mailbox for campaigns and newsletters."
+          ]
+        },
+        {
+          "id": "settings-payments",
+          "title": "Payments",
+          "path": "/store/settings",
+          "clickTab": "Payments",
+          "summary": "Show or hide checkout payment methods. A method that is off is hidden from customers. Order-total limits for the same methods live under Shipping.",
+          "controls": [
+            "Cash on Delivery (COD).",
+            "Card payment — credit and debit cards, including Visa, Mastercard, Amex, and Google Pay.",
+            "Tabby — buy now, pay later.",
+            "Tamara — buy now, pay later."
+          ]
+        },
+        {
+          "id": "settings-new-tag",
+          "title": "New tag",
+          "path": "/store/settings",
+          "clickTab": "New tag",
+          "summary": "The New badge drawn on product images. It appears on the homepage, shop, search, wishlist, cart, and the product page, then hides after the number of days you set. You can place up to two badges.",
+          "controls": [
+            "Show New badge — master switch. Off hides the badge on every product image.",
+            "Show on product images — overlay the badge on product photos.",
+            "Show for how many days — 1 to 365. Older products stop showing the badge.",
+            "Badge 1 and Badge 2 — label text, colors, font, and position. The second badge sits on the opposite side of the first."
+          ]
+        },
+        {
+          "id": "settings-team",
+          "title": "Team Access",
+          "path": "/store/settings?tab=team",
+          "clickTab": "Team Access",
+          "summary": "Invite staff and choose which sidebar areas each person can open. Only an owner, or a member allowed to manage staff, sees this tab.",
+          "controls": [
+            "Invite by email — sends an invite link. The person accepts it at /store/invite/accept.",
+            "Permission groups — Store & catalog, Orders & customers, Marketing, Support & reviews, Warehouse, and Team.",
+            "Per-person switches — each sidebar area can be on or off, including price editing and the settings history log.",
+            "Remove a member — revokes that person's dashboard access."
+          ]
+        },
+        {
+          "id": "settings-import-card",
+          "title": "Data Import",
+          "path": "/store/settings",
+          "clickTab": "Data Import",
+          "summary": "Shortcut from Settings into the WordPress / WooCommerce migration wizard. The full wizard is also in the Core sidebar as Database Import.",
+          "controls": [
+            "Open import wizard — goes to /store/settings/database-import."
+          ]
+        },
+        {
+          "id": "settings-history",
+          "title": "History",
+          "path": "/store/settings/history",
+          "summary": "Activity log of settings changes. Visible to the admin email, and to any staff member who was given View settings history.",
+          "controls": [
+            "The log lists who changed store settings and when.",
+            "Use it to trace a payment, shipping, or badge change after it goes live."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "name": "Core",
+      "kicker": "Catalog",
+      "color": "#0369a1",
+      "summary": "Daily catalog work: the home dashboard, categories, brands, creating and editing products, and importing a legacy database.",
+      "pages": [
+        {
+          "id": "core-dashboard",
+          "title": "Dashboard",
+          "path": "/store",
+          "summary": "The home screen after sign-in. Live visitors, paid-order cards for today and this week, hourly and 30-day trends, fulfillment, and the contact inbox.",
+          "controls": [
+            "Top buttons: Refresh, Import Categories, Bulk Import, Invite Team, plus Orders, Abandoned checkout, Products, and Visitor tracking.",
+            "Live visitors: active now, last 5 minutes, products open, product bars, and who is browsing.",
+            "At a glance: Today, This week, All orders, Abandoned. Paid orders only. Pills for products, customers, average order, and orders that need shipping.",
+            "AI store insights: headline, Key signals, Do this next, and Outlook. Its own Refresh.",
+            "Trends: hourly today, 30-day sales, week vs week, order status, payment methods, reviews, and Contact Us messages."
+          ]
+        },
+        {
+          "id": "core-categories",
+          "title": "Categories",
+          "path": "/store/categories",
+          "summary": "The groups customers browse. Search a card to edit it or add products. Tick several cards in Manage categories to delete them together. Add Category creates a new group, and it shows on the shop as soon as you save.",
+          "controls": [
+            "Manage categories — selected count, Select Page, Clear, and Delete Selected. Nested categories under a selected parent are deleted too. Products stay.",
+            "Each card — level badge, slug, product count, Select, Add products, Edit, Delete, Generate image.",
+            "Add Category, Apply UAE Arabic Names, search, pages, and spreadsheet import."
+          ]
+        },
+        {
+          "id": "core-suppliers",
+          "title": "Suppliers",
+          "path": "/store/suppliers",
+          "summary": "The list of companies you buy from. Shoppers never see this screen. Add Product uses this list when you choose suppliers for a product.",
+          "controls": [
+            "Supplier name — required. This is the name in the list and in Choose suppliers on Add Product.",
+            "Company, contact name, email, and phone — how the team reaches the supplier. The dashboard does not email them from here.",
+            "City, country, address, and TRN — location and tax registration number for your records.",
+            "Notes — payment terms, lead time, or other details. Shoppers do not see them.",
+            "Active — uncheck to mark a supplier inactive without deleting it.",
+            "Delete — removes the supplier and drops that link from products. This cannot be undone."
+          ]
+        },
+        {
+          "id": "core-brands",
+          "title": "Brands",
+          "path": "/store/brands",
+          "summary": "Clean up brand names that products already use. This screen finds case-duplicates and lets you rename or merge a brand into another.",
+          "controls": [
+            "Case duplicates — groups such as “nike” and “Nike” that should be one brand.",
+            "Rename brand — changes the brand label on matching products.",
+            "Merge brand into another — moves products onto the brand you keep."
+          ]
+        },
+        {
+          "id": "core-add-product",
+          "title": "Add Product",
+          "path": "/store/add-product",
+          "summary": "The product editor. The same screen opens when you edit a product from Manage Product. Arabic fields stay right-to-left; the rest of the page stays English.",
+          "controls": [
+            "Identity — product name, auto slug, brand, SKU, categories, stock quantity, and units sold shown to shoppers.",
+            "Shipping facts — Waslah HS code, origin country, and ship weight in kilograms.",
+            "Prices — regular price, sale price, and matching Arabic price fields.",
+            "Copy — short description, sectioned description blocks, specification tables, and the full description.",
+            "A+ content — separate desktop and mobile rich content, including Arabic versions.",
+            "Tags, SEO title and description, and product badges drawn on the product page.",
+            "Variants — group name, customer-facing choice, optional color and size, variant image, stock, SKU, and prices.",
+            "Packs and gallery images are edited further down the same form."
+          ]
+        },
+        {
+          "id": "core-manage-product",
+          "title": "Manage Product",
+          "path": "/store/manage-product",
+          "summary": "Search the catalog, open a product in the editor, and run catalog actions such as publish state and fast-delivery flags.",
+          "controls": [
+            "Search and filters to find a product.",
+            "Open a row to edit it in Add Product.",
+            "Fast delivery toggle — marks a product for the fast-delivery collection.",
+            "Bulk import is available at /store/bulk-import when you need a spreadsheet upload."
+          ]
+        },
+        {
+          "id": "core-product-cost",
+          "title": "Product Cost",
+          "path": "/store/product-cost",
+          "summary": "Purchase cost for each product. Sales reports use it for profit. The shop price does not change.",
+          "controls": [
+            "Edit one row, or paste SKUs and apply a cost to many products.",
+            "Upload Excel with SKU and cost columns.",
+            "Missing cost filter finds products with no purchase cost.",
+            "Cost history records who changed a cost and the old and new amounts."
+          ]
+        },
+        {
+          "id": "core-product-badges",
+          "title": "Product Badges",
+          "path": "/store/badges",
+          "summary": "Labels drawn on product photos. Each badge has a condition, such as new, on sale, low stock, or fast delivery, plus colors and placement.",
+          "controls": [
+            "Show badges — master switch for every image badge.",
+            "Condition — when a badge is allowed to show, including new, on sale, stock, fast delivery, and always.",
+            "English and Arabic labels, position, shape, and colors.",
+            "Save changes — the shop keeps the previous badges until you save. Up to 8 badges."
+          ]
+        },
+        {
+          "id": "core-database-import",
+          "title": "Database Import",
+          "path": "/store/settings/database-import",
+          "summary": "Migrate a WordPress or WooCommerce database into Store1920. Configure the source, choose what to import, then review the summary before you run it.",
+          "controls": [
+            "Migration configuration — connection and target options for the legacy database.",
+            "Select data to import — products, categories, customers, and related records.",
+            "Import source — where the SQL or export is read from.",
+            "Import summary — counts before the migration is committed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storefront",
+      "name": "Storefront",
+      "kicker": "Design",
+      "color": "#047857",
+      "summary": "How the public shop looks. Customize is the hub. WhatsApp, scroll-to-top, mobile app blocks, blogs, the navbar, and the media library sit beside it in the sidebar.",
+      "pages": [
+        {
+          "id": "sf-customize",
+          "title": "Customize",
+          "path": "/store/customize",
+          "summary": "Store Design Hub. Design pages change layout and chrome. Selection pages choose which products and categories appear in homepage blocks.",
+          "controls": [
+            "Design pages — homepage sections, banners, appearance, navbar, home categories, carousel, sitemap categories, SEO, product-page badges, WhatsApp, and scroll to top.",
+            "Selection pages — Recommended products, Featured sections, Featured products, Today's Deals / Offers, and Top Deals."
+          ]
+        },
+        {
+          "id": "sf-home",
+          "title": "Section 1 — home page",
+          "path": "/store/home-preferences",
+          "summary": "Homepage product blocks and their design, opened from Customize.",
+          "controls": [
+            "Turn homepage product blocks on or off.",
+            "Edit titles and the rules that fill each block."
+          ]
+        },
+        {
+          "id": "sf-banners",
+          "title": "Banner section — Home",
+          "path": "/store/preferences",
+          "summary": "Referral rewards plus the homepage showcase banners, collected on one screen.",
+          "controls": [
+            "Referral reward settings.",
+            "Showcase 4-grid banners.",
+            "Banner 2 slider."
+          ]
+        },
+        {
+          "id": "sf-appearance",
+          "title": "Appearance",
+          "path": "/store/storefront/appearance",
+          "summary": "Switches that show or hide storefront sections and change how those sections display.",
+          "controls": [
+            "Section visibility toggles.",
+            "Display behavior for the public shop."
+          ]
+        },
+        {
+          "id": "sf-navbar-design",
+          "title": "Navbar Design",
+          "path": "/store/navbar-menu",
+          "summary": "Navbar links, the logo upload, and the navbar background color.",
+          "controls": [
+            "Menu links shown in the top bar.",
+            "Logo file.",
+            "Navbar background color."
+          ]
+        },
+        {
+          "id": "sf-navbar-menu",
+          "title": "Navbar Menu",
+          "path": "/store/storefront/navbar-menu",
+          "summary": "Navbar layout, sticky behavior, and which menus are visible. Menu Management in the sidebar is the larger editor for the same header.",
+          "controls": [
+            "Layout and sticky header.",
+            "Menu visibility."
+          ]
+        },
+        {
+          "id": "sf-home-categories",
+          "title": "Home Categories",
+          "path": "/store/storefront/home-menu-categories",
+          "summary": "The category blocks on the homepage: which categories appear and how the block is designed.",
+          "controls": [
+            "Category selection.",
+            "Block layout and labels."
+          ]
+        },
+        {
+          "id": "sf-carousel",
+          "title": "Carousel Settings",
+          "path": "/store/storefront/carousel-slider",
+          "summary": "Homepage hero banners: slides, order, and slider behavior.",
+          "controls": [
+            "Add, reorder, and remove slides.",
+            "Images, links, and autoplay behavior."
+          ]
+        },
+        {
+          "id": "sf-sitemap",
+          "title": "Sitemap Categories",
+          "path": "/store/storefront/sitemap-categories",
+          "summary": "The category section of the public sitemap page.",
+          "controls": [
+            "Which categories are listed.",
+            "Layout of that sitemap block."
+          ]
+        },
+        {
+          "id": "sf-seo",
+          "title": "SEO Meta Tags",
+          "path": "/store/storefront/seo",
+          "summary": "Meta title, description, and keywords for a chosen storefront page.",
+          "controls": [
+            "Pick the page.",
+            "Meta title, meta description, and keywords."
+          ]
+        },
+        {
+          "id": "sf-badges",
+          "title": "Product page badges",
+          "path": "/store/customize/product-page",
+          "summary": "Trust lines on the product page: badges plus the delivery, returns, VAT, and rush-delivery texts.",
+          "controls": [
+            "Product badges shown beside the buy box.",
+            "Delivery, returns, VAT, and rush-delivery copy."
+          ]
+        },
+        {
+          "id": "sf-whatsapp",
+          "title": "WhatsApp Widget",
+          "path": "/store/customize/whatsapp-widget",
+          "summary": "The WhatsApp chat button on product pages. Also linked directly in the sidebar.",
+          "controls": [
+            "WhatsApp number customers message.",
+            "Which product pages show the button."
+          ]
+        },
+        {
+          "id": "sf-scroll",
+          "title": "Scroll to Top",
+          "path": "/store/customize/scroll-to-top",
+          "summary": "The back-to-top button. Place it on the right, above the Tawk chat, or at the bottom left.",
+          "controls": [
+            "Show or hide the button.",
+            "Position: right side above Tawk, or left bottom."
+          ]
+        },
+        {
+          "id": "sf-offers",
+          "title": "Today's Deals / Offers",
+          "path": "/store/customize/offers",
+          "summary": "The /offers page and the header deals button: title, subtitle, button style, and which products qualify.",
+          "controls": [
+            "Page title and subtitle.",
+            "Header deals button text and style.",
+            "Product source — by discount, by search, or by category."
+          ]
+        },
+        {
+          "id": "sf-top-deals",
+          "title": "Top Deals",
+          "path": "/store/customize/top-deals",
+          "summary": "Title and product source for the Top Deals homepage block.",
+          "controls": [
+            "Section copy.",
+            "Product source rules, including a manual product pick."
+          ]
+        },
+        {
+          "id": "sf-featured-sections",
+          "title": "Featured Sections",
+          "path": "/store/category-slider",
+          "summary": "Featured collections and the content inside those homepage sections.",
+          "controls": [
+            "Which collections are featured.",
+            "Section content and order."
+          ]
+        },
+        {
+          "id": "sf-featured-products",
+          "title": "Featured Products",
+          "path": "/store/featured-products",
+          "summary": "The Top Picks block: its title, and products chosen manually, by category, or by tags.",
+          "controls": [
+            "Section title.",
+            "Manual products, category rules, or tag rules."
+          ]
+        },
+        {
+          "id": "sf-recommended",
+          "title": "Recommended Products",
+          "path": "/store/explore-interests",
+          "summary": "The products shown in the Recommended tab under Explore your interests. This list is chosen by hand.",
+          "controls": [
+            "Search the catalog and pin products into the Recommended tab."
+          ]
+        },
+        {
+          "id": "sf-mobile",
+          "title": "Mobile Features",
+          "path": "/store/mobile-features",
+          "summary": "Home screen blocks for the mobile app. Each block has its own editor and a live layout preview.",
+          "controls": [
+            "Large App Banners — hero slider, height, auto-slide, up to 8 slides.",
+            "Small Promo Banners — thin strips under the hero, up to 12 slides.",
+            "Promo Card Banners — larger cards with an optional Ad badge, up to 8 slides.",
+            "Category Tile Banners — two-column tiles with title, subtitle, and button, up to 12 tiles."
+          ]
+        },
+        {
+          "id": "sf-mobile-banners",
+          "title": "Large App Banners",
+          "path": "/store/mobile-features/banners",
+          "summary": "The hero slider at the top of the app home screen.",
+          "controls": [
+            "Slide images and links.",
+            "Height and auto-slide.",
+            "Up to 8 slides."
+          ]
+        },
+        {
+          "id": "sf-mobile-small",
+          "title": "Small Promo Banners",
+          "path": "/store/mobile-features/small-banners",
+          "summary": "Thin promotional strips under the app hero.",
+          "controls": [
+            "Up to 12 slides.",
+            "Image, link, and order."
+          ]
+        },
+        {
+          "id": "sf-mobile-promo",
+          "title": "Promo Card Banners",
+          "path": "/store/mobile-features/promo-cards",
+          "summary": "Larger promo cards on the app home screen.",
+          "controls": [
+            "Up to 8 slides.",
+            "Optional Ad badge on a card."
+          ]
+        },
+        {
+          "id": "sf-mobile-tiles",
+          "title": "Category Tile Banners",
+          "path": "/store/mobile-features/tile-banners",
+          "summary": "Two-column category tiles on the app home screen.",
+          "controls": [
+            "Title, subtitle, and button on each tile.",
+            "Up to 12 tiles."
+          ]
+        },
+        {
+          "id": "sf-blogs",
+          "title": "Blogs",
+          "path": "/store/blogs",
+          "summary": "Create and edit storefront articles. A new post opens at /store/blogs/new. The public list is /blogs.",
+          "controls": [
+            "Post list — open, create, or update an article.",
+            "Rich description with headings, fonts, and images.",
+            "Publish state for the public blog."
+          ]
+        },
+        {
+          "id": "sf-menu",
+          "title": "Menu Management",
+          "path": "/store/menu-management",
+          "summary": "The full header editor: branding, the categories button, search width, sticky behavior, and the buttons next to LAST CHANCE. Unchecked navbar actions stay hidden on the live shop.",
+          "controls": [
+            "Navbar branding — logo and names.",
+            "Navbar actions — each action can be shown or hidden.",
+            "Buttons next to LAST CHANCE.",
+            "Sticky header and the categories button.",
+            "Search field and header width."
+          ]
+        },
+        {
+          "id": "sf-media",
+          "title": "Media",
+          "path": "/store/media",
+          "summary": "The image library used by products and storefront blocks.",
+          "controls": [
+            "Browse uploaded images.",
+            "Open a product image to inspect it."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "kicker": "Campaigns",
+      "color": "#6d28d9",
+      "summary": "Offers, coupons, giveaways, the spin wheel, email, and the analytics screens that score customers and traffic.",
+      "pages": [
+        {
+          "id": "mkt-offers",
+          "title": "Promotional Offers",
+          "path": "/store/personalized-offers",
+          "summary": "Personalized promotional offers shown to shoppers.",
+          "controls": [
+            "Create and edit an offer.",
+            "Choose who sees it and which products it covers."
+          ]
+        },
+        {
+          "id": "mkt-coupons",
+          "title": "Coupons",
+          "path": "/store/coupons",
+          "summary": "Discount codes used at checkout. Day-to-day coupon editing is also at /store/manage-coupons.",
+          "controls": [
+            "Code, discount type, and amount.",
+            "Active dates and usage limits.",
+            "Which products or orders the code applies to."
+          ]
+        },
+        {
+          "id": "mkt-giveaways",
+          "title": "Giveaways",
+          "path": "/store/giveaways",
+          "summary": "Giveaway campaigns attached to products or promotions.",
+          "controls": [
+            "Campaign details and the prize or included product.",
+            "Active window for the giveaway."
+          ]
+        },
+        {
+          "id": "mkt-spin",
+          "title": "Spin Wheel",
+          "path": "/store/spin-wheel",
+          "summary": "The on-site spin-wheel campaign: prizes, odds, and whether the wheel is shown.",
+          "controls": [
+            "Enable the campaign.",
+            "Prize slices, labels, and coupon rewards.",
+            "Who can spin and how often."
+          ]
+        },
+        {
+          "id": "mkt-email",
+          "title": "Email Marketing",
+          "path": "/store/email-marketing",
+          "summary": "Promotional email campaigns. Related tools: templates at /store/email-templates, a test send at /store/send-test-email, and the promotional SMTP mailbox under Settings → Preferences.",
+          "controls": [
+            "Campaign list and a new send.",
+            "Audience and the message body.",
+            "Promotional mail uses the promotional SMTP settings, not the transactional mailbox."
+          ]
+        },
+        {
+          "id": "mkt-tracking",
+          "title": "Customer Tracking",
+          "path": "/store/customer-tracking",
+          "summary": "What known shoppers did on the store: visits and product interest used by the marketing tools.",
+          "controls": [
+            "Customer activity list.",
+            "Filters for recent behavior."
+          ]
+        },
+        {
+          "id": "mkt-analytics",
+          "title": "Marketing Analytics",
+          "path": "/store/marketing-analytics",
+          "summary": "Funnel and catalog demand: conversion steps, top products, and top searches.",
+          "controls": [
+            "Conversion funnel.",
+            "Top products.",
+            "Top searches."
+          ]
+        },
+        {
+          "id": "mkt-heatmap",
+          "title": "Heatmap",
+          "path": "/store/heatmap",
+          "summary": "Clicks recorded on the storefront.",
+          "controls": [
+            "All tracked pages.",
+            "Top clicked elements.",
+            "A short note on how tracking is collected."
+          ]
+        },
+        {
+          "id": "mkt-cohorts",
+          "title": "Cohort Tracking",
+          "path": "/store/cohorts",
+          "summary": "Customers grouped by when they first bought or signed up, so you can see who comes back.",
+          "controls": [
+            "Cohort table by signup or first-order period.",
+            "Retention across later periods."
+          ]
+        },
+        {
+          "id": "mkt-churn",
+          "title": "Churn Scores",
+          "path": "/store/churn-scores",
+          "summary": "Customers scored by how likely they are to stop buying.",
+          "controls": [
+            "Score list.",
+            "Sort to find the highest-risk customers."
+          ]
+        },
+        {
+          "id": "mkt-rfm",
+          "title": "RFM Scores",
+          "path": "/store/rfm-scores",
+          "summary": "Recency, frequency, and monetary scores for customers.",
+          "controls": [
+            "RFM segment for each customer.",
+            "Use the scores when you build a coupon or email audience."
+          ]
+        },
+        {
+          "id": "mkt-triggers",
+          "title": "Behavioral Triggers",
+          "path": "/store/behavioral-triggers",
+          "summary": "Automatic actions when a shopper does something, such as leaving a checkout or viewing a product.",
+          "controls": [
+            "Trigger event.",
+            "The message or offer that fires."
+          ]
+        },
+        {
+          "id": "mkt-stack",
+          "title": "Marketing Stack",
+          "path": "/store/marketing-stack",
+          "summary": "Which marketing integrations are connected for the store.",
+          "controls": [
+            "Connected tools and their status.",
+            "Open a tool to finish its setup."
+          ]
+        },
+        {
+          "id": "mkt-ads",
+          "title": "Ad Tracking",
+          "path": "/store/ads-tracking",
+          "summary": "Ad platform identifiers used to attribute orders, including the Meta pixel already loaded on the storefront.",
+          "controls": [
+            "Pixel and conversion settings.",
+            "Campaign identifiers you want stored with orders."
+          ]
+        },
+        {
+          "id": "mkt-expenses",
+          "title": "Marketing Expenses",
+          "path": "/store/marketing-expenses",
+          "summary": "Ad spend so profit reports can include marketing cost. Meta spend can be pulled from a connected account, or you can enter a cost by hand.",
+          "controls": [
+            "Connect Meta account.",
+            "Add a marketing expense — amount, date, and channel.",
+            "The sales report uses these costs when it calculates profit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "name": "Sales & Operations",
+      "kicker": "Orders",
+      "color": "#b45309",
+      "summary": "Orders, pickup, shipping prices, checkout alerts, payment security, returns, payouts, and exports.",
+      "pages": [
+        {
+          "id": "ops-orders",
+          "title": "Orders",
+          "path": "/store/orders",
+          "summary": "The order queue, plus Import / Export. Bring in a WordPress CSV, update statuses from Excel, or download CSV, Excel, and PDF. A green sidebar count means unread orders.",
+          "controls": [
+            "Import / Export opens the file tools. Hide it with the same button.",
+            "Import Orders CSV is the WordPress .csv only. Do not resave it in Excel.",
+            "Bulk status Excel uses ShipperRef and Status. Undo lasts 30 minutes.",
+            "Export Type, then Export CSV or Export Excel. Ticked orders export alone."
+          ]
+        },
+        {
+          "id": "ops-pickup",
+          "title": "Pickup list",
+          "path": "/store/todays-pickup",
+          "summary": "Orders due for courier pickup. An amber count on the sidebar means pickups are overdue.",
+          "controls": [
+            "Today's pickup rows.",
+            "Overdue pickups highlighted for the warehouse."
+          ]
+        },
+        {
+          "id": "ops-by-product",
+          "title": "Orders by Product",
+          "path": "/store/orders-by-product",
+          "summary": "Demand grouped by product instead of by order, for purchasing and packing.",
+          "controls": [
+            "Product totals across orders.",
+            "Open the orders that contain a product."
+          ]
+        },
+        {
+          "id": "ops-trash",
+          "title": "Trash",
+          "path": "/store/trash",
+          "summary": "Deleted records held so they can be restored.",
+          "controls": [
+            "Review deleted items.",
+            "Restore an item back into the live catalog or order list."
+          ]
+        },
+        {
+          "id": "ops-abandoned",
+          "title": "Abandoned Checkout",
+          "path": "/store/abandoned-checkout",
+          "summary": "Checkouts that were started and not paid. Use this list for recovery.",
+          "controls": [
+            "Unpaid checkout sessions.",
+            "Customer and cart details for a follow-up."
+          ]
+        },
+        {
+          "id": "ops-shipping",
+          "title": "Shipping",
+          "path": "/store/shipping",
+          "summary": "Delivery prices and the order-total caps for COD, card, Tabby, and Tamara. Turning a method off here hides it at checkout, same as Settings → Payments.",
+          "controls": [
+            "Enable Shipping Charges — master switch for delivery fees.",
+            "Delivery Options — one or more methods, each with its own price rule.",
+            "Free Shipping by Product — products that always ship free.",
+            "Free Shipping Threshold — order amount that waives the standard fee.",
+            "Regional Delivery Fees — optional local and regional overrides.",
+            "Express Shipping — extra fee and the delivery-days label.",
+            "Cash on Delivery — on/off, processing fee, and maximum order total. 0 means unlimited.",
+            "Online Payment Methods — Card, Tabby, and Tamara, each with an optional maximum order total."
+          ]
+        },
+        {
+          "id": "ops-alerts",
+          "title": "Alerts",
+          "path": "/store/alerts",
+          "summary": "The notice shown during checkout.",
+          "controls": [
+            "Visibility — where the alert appears.",
+            "Alert content — the message customers read.",
+            "Live preview of the checkout notice."
+          ]
+        },
+        {
+          "id": "ops-payment-security",
+          "title": "Payment Security",
+          "path": "/store/payment-security",
+          "summary": "How card payments are handled: hosted checkout, no card storage on Store1920, and refund requests that go through Stripe.",
+          "controls": [
+            "PCI-DSS posture — what the store stores and what the gateway stores.",
+            "Fraud and refunds — review notes for a refund.",
+            "Request Stripe refund — submit a refund against a Stripe payment."
+          ]
+        },
+        {
+          "id": "ops-returns",
+          "title": "Returns & Replacements",
+          "path": "/store/return-requests",
+          "summary": "Customer return, refund, and replacement requests from the public return form.",
+          "controls": [
+            "Request queue and status.",
+            "Open a request to approve, reject, or mark it replaced."
+          ]
+        },
+        {
+          "id": "ops-balance",
+          "title": "Balance",
+          "path": "/store/balance",
+          "summary": "Store balance and payout position.",
+          "controls": [
+            "Current balance.",
+            "Recent movements that explain the total."
+          ]
+        },
+        {
+          "id": "ops-sales",
+          "title": "Sales Report",
+          "path": "/store/sales-report",
+          "summary": "Did this period make money. Revenue after refunds, product and delivery cost, ad spend, profit, and one row per order. Cancelled orders are hidden. Failed payments stay visible but are left out of the totals.",
+          "controls": [
+            "Date Range: Today through Last Year, or a custom start and end. Both custom dates are required.",
+            "Total Revenue, Total Costs, Total Profit or Loss, and average order value.",
+            "COD Orders, Payment Success, and Failed Orders. Failed amounts are excluded.",
+            "Marketing Expenses and Product Pricing open those screens. Export Excel downloads this period."
+          ]
+        },
+        {
+          "id": "ops-exports",
+          "title": "Exports",
+          "path": "/store/exports",
+          "summary": "Download store data as files for accounting or analysis.",
+          "controls": [
+            "Choose the dataset.",
+            "Download the file once the export is ready."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "name": "Warehouse",
+      "kicker": "Stock",
+      "color": "#4338ca",
+      "summary": "Stock counts live here, separate from the product editor. Price changes on a product still happen in Add Product, and only for staff who have Change product prices.",
+      "pages": [
+        {
+          "id": "wh-inventory",
+          "title": "Inventory",
+          "path": "/store/inventory",
+          "summary": "Update on-hand stock, read the stock log, and download the catalog as Excel.",
+          "controls": [
+            "Stock quantities per product.",
+            "Stock update log — who changed a quantity and when.",
+            "Download Excel — a spreadsheet of current stock."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Customers & Support",
+      "kicker": "Service",
+      "color": "#be123c",
+      "summary": "Customer records, reviews, tickets, product announcement emails, and the contact-form inbox on the dashboard.",
+      "pages": [
+        {
+          "id": "cs-customers",
+          "title": "Customers",
+          "path": "/store/customers",
+          "summary": "People who have accounts or orders. Open a customer to see contact details and order history.",
+          "controls": [
+            "Search the customer list.",
+            "Open a profile for orders and contact details."
+          ]
+        },
+        {
+          "id": "cs-reviews",
+          "title": "Reviews",
+          "path": "/store/reviews",
+          "summary": "Product reviews left by shoppers. Moderate them before they stay on the product page.",
+          "controls": [
+            "Reviews grouped by product.",
+            "Open a product to read individual reviews."
+          ]
+        },
+        {
+          "id": "cs-tickets",
+          "title": "Support Tickets",
+          "path": "/store/tickets",
+          "summary": "Customer support messages, newest first. Filter by status and priority, open a ticket, reply by email, then mark it resolved or closed. A closed ticket cannot be replied to from this screen.",
+          "controls": [
+            "Counts for Total, Open, In Progress, Resolved, and Closed.",
+            "Status and Priority filters. Open also includes In Progress. Closed also includes Resolved.",
+            "A ticket row shows subject, urgency, status, customer, topic, and the order when one is attached.",
+            "Reply to Customer emails the customer. Mark Resolved or Close Ticket asks you to confirm."
+          ]
+        },
+        {
+          "id": "cs-notifications",
+          "title": "Product Notifications",
+          "path": "/store/product-notifications",
+          "summary": "Email shoppers about a product. Pick the product, an optional message, extra addresses, and the customers who should receive it.",
+          "controls": [
+            "Select product.",
+            "Custom message — optional.",
+            "Additional email addresses — optional, outside the customer list.",
+            "Select customers — who is included in the send."
+          ]
+        },
+        {
+          "id": "cs-contact",
+          "title": "Contact Us Messages",
+          "path": "/store#contact-messages",
+          "summary": "Messages from the public Contact Us form. They are listed on the dashboard, not on a separate page.",
+          "controls": [
+            "Read each message from the dashboard inbox.",
+            "Use the customer's email on the message if you reply outside the dashboard."
+          ]
+        }
+      ]
+    }
+  ]
+}
